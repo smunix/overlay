@@ -1,0 +1,19 @@
+diff --git a/work/inkscape-0.48.2/src/graphlayout.cpp b/work/inkscape-0.48.2/src/graphlayout.cpp
+index a89af10..e34d404 100644
+--- a/work/inkscape-0.48.2/src/graphlayout.cpp
++++ b/work/inkscape-0.48.2/src/graphlayout.cpp
+@@ -155,11 +155,11 @@ void graphlayout(GSList const *const items) {
+          ++i)
+     {
+         SPItem *iu=*i;
+-        map<string,unsigned>::iterator i=nodelookup.find(iu->getId());
+-        if(i==nodelookup.end()) {
++        map<string,unsigned>::iterator itn=nodelookup.find(iu->getId());
++        if(itn==nodelookup.end()) {
+             continue;
+         }
+-        unsigned u=i->second;
++        unsigned u=itn->second;
+         GSList *nlist=iu->avoidRef->getAttachedConnectors(Avoid::runningFrom);
+         list<SPItem *> connectors;
+ 
