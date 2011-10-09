@@ -1,0 +1,12 @@
+diff --git a/src/thread_base.cc b/src/thread_base.cc
+index 4a02377..d59b9de 100644
+--- a/src/thread_base.cc
++++ b/src/thread_base.cc
+@@ -43,6 +43,7 @@
+ #include <cstring>
+ #include <iostream>
+ #include <signal.h>
++#include <unistd.h>
+ #include <rak/error_number.h>
+ #include <torrent/exceptions.h>
+ 
