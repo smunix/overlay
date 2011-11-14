@@ -1,0 +1,2 @@
+#!/bin/bash
+dmd1.bin -I/usr/include/tango -L-L/usr/lib -I/usr/include/d -version=Tango -defaultlib=tango-dmd -debuglib=tango-dmd $*
