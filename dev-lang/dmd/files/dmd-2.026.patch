@@ -1,0 +1,60 @@
+diff -r 7494e17f3f39 backend/dwarf.c
+--- a/backend/dwarf.c	Sat Mar 07 14:06:56 2009 +0000
++++ b/backend/dwarf.c	Sat Mar 07 14:10:02 2009 +0000
+@@ -51,7 +51,7 @@
+ #if ELFOBJ || MACHOBJ
+ 
+ #if MARS
+-#include	"../mars/mars.h"
++#include	"../mars.h"
+ #endif
+ 
+ #include	"dwarf.h"
+diff -r 7494e17f3f39 backend/elfobj.c
+--- a/backend/elfobj.c	Sat Mar 07 14:06:56 2009 +0000
++++ b/backend/elfobj.c	Sat Mar 07 14:10:02 2009 +0000
+@@ -43,7 +43,7 @@
+ #if ELFOBJ
+ 
+ #if MARS
+-#include	"../mars/mars.h"
++#include	"../mars.h"
+ #endif
+ 
+ #include	"dwarf.h"
+diff -r 7494e17f3f39 linux.mak
+--- a/linux.mak	Sat Mar 07 14:06:56 2009 +0000
++++ b/linux.mak	Sat Mar 07 14:10:02 2009 +0000
+@@ -215,7 +215,7 @@
+ csymbol.o : $C/symbol.c
+ 	$(CC) -c $(MFLAGS) $C/symbol.c -o csymbol.o
+ 
+-dchar.o: ../root/dchar.c
++dchar.o: ${ROOT}/dchar.c
+ 	$(CC) -c $(CFLAGS) $<
+ 
+ cond.o: cond.c
+diff -r 7494e17f3f39 ph.c
+--- a/ph.c	Sat Mar 07 14:06:56 2009 +0000
++++ b/ph.c	Sat Mar 07 14:10:02 2009 +0000
+@@ -13,7 +13,7 @@
+ #include	<time.h>
+ #include	<string.h>
+ #include	<stdlib.h>
+-#include	<new.h>
++#include	<new>
+ 
+ #include	"cc.h"
+ #include	"global.h"
+diff -r 7494e17f3f39 tk/mem.c
+--- a/tk/mem.c	Sat Mar 07 14:06:56 2009 +0000
++++ b/tk/mem.c	Sat Mar 07 14:10:02 2009 +0000
+@@ -15,7 +15,7 @@
+ #include	<stddef.h>
+ 
+ #if __cplusplus
+-#include	<new.h>
++#include	<new>
+ #endif
+ 
+ #ifndef malloc

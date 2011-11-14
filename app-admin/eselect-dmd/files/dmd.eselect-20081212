@@ -1,0 +1,128 @@
+# Copyright 1999-2008 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Id: $
+
+DESCRIPTION="DMD version and library configuration"
+MAINTAINER="naryl"
+SVN_DATE='$Date: $'
+VERSION=$(svn_date_to_version "${SVN_DATE}" )
+
+find_targets() {
+	DMD1=`equery -q l dmd-bin-1 | grep -c .`
+	DMD2=`equery -q l dmd-bin-2 | grep -c .`
+	PHOBOS1=`equery -q l phobos-1 | grep -c .`
+	PHOBOS2=`equery -q l phobos-2 | grep -c .`
+	TANGO=`equery -q l tango | grep -c .`
+
+	if [ "$DMD1" = 1 ] ; then
+		echo "dmd1-runtime"
+		if [ "$PHOBOS1" = 1 ]; then
+			echo "dmd1-phobos"
+		fi
+		if [ "$TANGO" = 1 ]; then
+			echo "dmd1-tango"
+		fi
+	fi
+
+	if [ "$DMD2" = 1 ] ; then
+		echo "dmd2-runtime"
+		if [ "$PHOBOS2" = 1 ]; then
+			echo "dmd2-phobos"
+		fi
+	fi
+}
+
+remove_script() {
+	rm ${ROOT}/usr/bin/dmd 2> /dev/null
+}
+
+set_script() {
+	target=${1}
+	if is_number "${target}" ; then
+		targets=( $(find_targets ) )
+		target=${targets[$(( ${target} - 1 ))]}
+	fi
+
+	COMMAND="-L-L/usr/lib -I/usr/include/d"
+
+	if [ "${target}" = "dmd1-runtime" ]; then
+		COMMAND="dmd1.bin $COMMAND -version=Posix \$*"
+	elif [ "${target}" = "dmd2-runtime" ]; then
+		COMMAND="dmd2.bin $COMMAND -I/usr/include/druntime \$*"
+	elif [ "${target}" = "dmd1-phobos" ]; then
+		COMMAND="dmd1.bin $COMMAND -I/usr/include/phobos1 -version=Posix \$*"
+	elif [ "${target}" = "dmd2-phobos" ]; then
+		COMMAND="dmd2.bin $COMMAND -I/usr/include/phobos2 -I/usr/include/druntime \$*"
+	elif [ "${target}" = "dmd1-tango" ]; then
+		COMMAND="dmd1.bin $COMMAND -I/usr/include/tango -version=Posix -version=Tango -defaultlib=tango-base-dmd -debuglib=tango-base-dmd \$*"
+	else
+		die "This doesn't seem to be correct config name: $target"
+	fi
+		
+	SCRIPT=${ROOT}/usr/bin/dmd
+	echo "#!/bin/sh" > $SCRIPT || die -q "Couldn't create new script"
+	echo $COMMAND >> $SCRIPT || die -q "Couldn't create new script"
+	echo \#$target >> $SCRIPT || die -q "Couldn't create new script"
+	chmod +x $SCRIPT
+
+}
+### list action
+
+## {{{ 
+describe_list() {
+	echo "List available configurations"
+}
+
+do_list() {
+	targets=( $(find_targets ) )
+	write_list_start "Available configurations:"
+	if [[ -n ${targets[@]} ]] ; then
+		local i
+		write_numbered_list "${targets[@]}"
+	else
+		write_kv_list_entry "(none found)" ""
+	fi
+}
+
+### set action
+
+describe_set() {
+	echo "Set a new configuration"
+}
+
+describe_set_parameters() {
+	echo "<configuration>"
+}
+
+describe_set_options() {
+	echo "configuration : library-compiler pair number"
+}
+
+do_set() {
+	if [[ -z ${1} ]] ; then
+		# no parameter
+		die -q "You didn't tell me what configuration I need to set"
+	fi
+
+	remove_script
+	if ! set_script "${1}" ; then
+		die -q "Couldn't set a run script"
+	fi
+
+}
+
+### show action
+
+describe_show() {
+	echo "Show current configuration"
+}
+
+do_show() {
+	target=$(cat ${ROOT}/usr/bin/dmd | tail -n 1 | sed "s/#//")
+	write_list_start "Current configuration:"
+	write_kv_list_entry "$target" ""
+}
+
+## }}}
+
+# vim: ts=4 sw=4 noet fdm=marker
