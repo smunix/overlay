@@ -1,0 +1,26 @@
+diff --git a/eix-0.23.3/src/eix-diff.cc b/eix-0.23.3/src/eix-diff.cc
+index a6ac580..7b032a1 100644
+--- a/eix-0.23.3/src/eix-diff.cc
++++ b/eix-0.23.3/src/eix-diff.cc
+@@ -41,6 +41,8 @@
+ #include <cstdio>
+ #include <cstdlib>
+ 
++#include <unistd.h>
++
+ #define VAR_DB_PKG "/var/db/pkg/"
+ 
+ using namespace std;
+diff --git a/eix-0.23.3/src/eix.cc b/eix-0.23.3/src/eix.cc
+index 9a6f586..462fedf 100644
+--- a/eix-0.23.3/src/eix.cc
++++ b/eix-0.23.3/src/eix.cc
+@@ -47,6 +47,8 @@
+ #include <cstdlib>
+ #include <cstring>
+ 
++#include <unistd.h>
++
+ #define VAR_DB_PKG "/var/db/pkg/"
+ 
+ using namespace std;

@@ -1,0 +1,13 @@
+diff --git a/eix-0.23.3/src/eixTk/md5.cc b/eix-0.23.3/src/eixTk/md5.cc
+index dd6bc77..59ef414 100644
+--- a/eix-0.23.3/src/eixTk/md5.cc
++++ b/eix-0.23.3/src/eixTk/md5.cc
+@@ -15,6 +15,8 @@
+ #include <sys/stat.h>
+ #include <sys/types.h>
+ 
++#include <unistd.h>
++
+ using namespace std;
+ 
+ inline static uint32_t
