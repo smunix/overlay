@@ -1,0 +1,16 @@
+diff --git a/vboxpci/linux/VBoxPci-linux.c b/vboxpci/linux/VBoxPci-linux.c
+index 24ff91c..d2173d6 100644
+--- a/vboxpci/linux/VBoxPci-linux.c
++++ b/vboxpci/linux/VBoxPci-linux.c
+@@ -64,6 +64,11 @@ MODULE_LICENSE("GPL");
+ MODULE_VERSION(VBOX_VERSION_STRING);
+ #endif
+ 
++#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 2, 0)
++#include <linux/pci.h>
++#define iommu_found() iommu_present(&pci_bus_type)
++#define iommu_domain_alloc() iommu_domain_alloc(&pci_bus_type)
++#endif
+ 
+ #if LINUX_VERSION_CODE >= KERNEL_VERSION(2, 6, 20)
+ # define PCI_DEV_GET(v,d,p)            pci_get_device(v,d,p)
