@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-guest-additions/virtualbox-guest-additions-4.1.4-r1.ebuild,v 1.2 2011/11/01 11:05:25 chainsaw Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-guest-additions/virtualbox-guest-additions-4.1.6-r1.ebuild,v 1.1 2011/11/06 23:40:53 polynomial-c Exp $
 
 EAPI=2
 
@@ -13,7 +13,7 @@ SRC_URI="http://download.virtualbox.org/virtualbox/${PV}/${MY_P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="X"
 
 RDEPEND="X? ( ~x11-drivers/xf86-video-virtualbox-${PV}
@@ -69,6 +69,8 @@ src_prepare() {
 	# PaX fixes (see bug #298988)
 	pushd "${WORKDIR}" &>/dev/null || die
 	epatch "${FILESDIR}"/vboxguest-4.1.0-log-use-c99.patch
+	epatch "${FILESDIR}"/virtualbox-guest-additions-4.1.6-r1-nlink.patch
+	epatch "${FILESDIR}"/virtualbox-guest-additions-4.1.6-r1-nlink-vboxsf.patch
 	popd &>/dev/null || die
 
 	# Disable things unused or splitted into separate ebuilds
