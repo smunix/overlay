@@ -1,0 +1,30 @@
+diff --git a/chrome/common/zip_internal.cc b/chrome/common/zip_internal.cc
+index ddcfd00..6c85548 100644
+--- a/chrome/common/zip_internal.cc
++++ b/chrome/common/zip_internal.cc
+@@ -2,6 +2,10 @@
+ // Use of this source code is governed by a BSD-style license that can be
+ // found in the LICENSE file.
+ 
++#ifndef OF
++#  define OF(x) x
++#endif
++
+ #include "chrome/common/zip.h"
+ 
+ #include "base/utf_string_conversions.h"
+diff --git a/chrome/common/zip_reader.cc b/chrome/common/zip_reader.cc
+index 88d3f8f..be37f81 100644
+--- a/chrome/common/zip_reader.cc
++++ b/chrome/common/zip_reader.cc
+@@ -2,6 +2,10 @@
+ // Use of this source code is governed by a BSD-style license that can be
+ // found in the LICENSE file.
+ 
++#ifndef OF
++#  define OF(x) x
++#endif
++
+ #include "chrome/common/zip_reader.h"
+ 
+ #include "base/file_util.h"

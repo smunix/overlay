@@ -1,0 +1,19 @@
+diff --git a/third_party/WebKit/Source/WebCore/bindings/v8/custom/V8InjectedScriptHostCustom.cpp b/third_party/WebKit/Source/WebCore/bindings/v8/custom/V8InjectedScriptHostCustom.cpp
+index cfb0f05..4f4ecdb 100644
+--- a/third_party/WebKit/Source/WebCore/bindings/v8/custom/V8InjectedScriptHostCustom.cpp
++++ b/third_party/WebKit/Source/WebCore/bindings/v8/custom/V8InjectedScriptHostCustom.cpp
+@@ -163,11 +163,11 @@ v8::Handle<v8::Value> V8InjectedScriptHost::functionLocationCallback(const v8::A
+         return v8::Undefined();
+     v8::Handle<v8::Function> function = v8::Handle<v8::Function>::Cast(value);
+     int lineNumber = function->GetScriptLineNumber();
+-    int columnNumber = function->GetScriptColumnNumber();
++//    int columnNumber = function->GetScriptColumnNumber();
+     v8::Local<v8::Object> result = v8::Object::New();
+     result->Set(v8::String::New("lineNumber"), v8::Integer::New(lineNumber));
+-    result->Set(v8::String::New("columnNumber"), v8::Integer::New(columnNumber));
+-    result->Set(v8::String::New("scriptId"), function->GetScriptId());
++//    result->Set(v8::String::New("columnNumber"), v8::Integer::New(columnNumber));
++//    result->Set(v8::String::New("scriptId"), function->GetScriptId());
+     return result;
+ }
+ 
