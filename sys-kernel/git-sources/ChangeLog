@@ -1,0 +1,768 @@
+# ChangeLog for sys-kernel/git-sources
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/git-sources/ChangeLog,v 1.1276 2011/11/15 17:26:08 mpagano Exp $
+
+*git-sources-3.2_rc2 (15 Nov 2011)
+
+  15 Nov 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.2_rc2.ebuild:
+  Version bump
+
+*git-sources-3.2_rc1 (08 Nov 2011)
+
+  08 Nov 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.2_rc1.ebuild,
+  -git-sources-3.2-r1.ebuild:
+  Fix 3.2 ebuild
+
+*git-sources-3.2-r1 (08 Nov 2011)
+
+  08 Nov 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.2-r1.ebuild:
+  Version bump
+
+  26 Oct 2011; Michael Pagano <mpagano@gentoo.org> ChangeLog:
+  Trim change log
+
+  25 Oct 2011; Michael Pagano <mpagano@gentoo.org> -git-sources-3.1_rc4.ebuild,
+  -git-sources-3.1_rc4-r1.ebuild, -git-sources-3.1_rc4-r2.ebuild,
+  -git-sources-3.1_rc5.ebuild, -git-sources-3.1_rc6.ebuild,
+  -git-sources-3.1_rc7.ebuild, -git-sources-3.1_rc8.ebuild:
+  Old version cleanup
+
+*git-sources-3.1_rc10 (18 Oct 2011)
+
+  18 Oct 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc10.ebuild:
+  Version bump
+
+  06 Oct 2011; Michael Pagano <mpagano@gentoo.org> git-sources-3.1_rc5.ebuild,
+  git-sources-3.1_rc6.ebuild, git-sources-3.1_rc7.ebuild,
+  git-sources-3.1_rc8.ebuild, git-sources-3.1_rc9.ebuild:
+  Migrate rc ebuilds to point to git.kernel.org which is back online
+
+*git-sources-3.1_rc9 (05 Oct 2011)
+
+  05 Oct 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.1_rc9.ebuild:
+  Version bump
+
+*git-sources-3.1_rc8 (28 Sep 2011)
+
+  28 Sep 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.1_rc8.ebuild:
+  Version bump
+
+*git-sources-3.1_rc7 (22 Sep 2011)
+
+  22 Sep 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.1_rc7.ebuild:
+  Version bump
+
+  18 Sep 2011; Michael Pagano <mpagano@gentoo.org> git-sources-3.1_rc5.ebuild,
+  git-sources-3.1_rc6.ebuild:
+  Fix EGIT_COMMIT one more time.
+
+  18 Sep 2011; Michael Pagano <mpagano@gentoo.org> git-sources-3.1_rc5.ebuild,
+  git-sources-3.1_rc6.ebuild:
+  Change ebuilds to use EGIT_COMMIT
+
+  16 Sep 2011; Michael Pagano <mpagano@gentoo.org> -git-sources-3.1_rc3.ebuild,
+  -git-sources-3.1_rc3-r1.ebuild, -git-sources-3.1_rc3-r2.ebuild,
+  -git-sources-3.1_rc3-r3.ebuild, -git-sources-3.1_rc3-r4.ebuild,
+  -git-sources-3.1_rc3-r5.ebuild, -git-sources-3.1_rc3-r6.ebuild,
+  -git-sources-3.1_rc3-r7.ebuild:
+  Old version cleanup
+
+*git-sources-3.1_rc6 (14 Sep 2011)
+
+  14 Sep 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.1_rc6.ebuild:
+  Version bump
+
+*git-sources-3.1_rc5 (14 Sep 2011)
+
+  14 Sep 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.1_rc5.ebuild:
+  Add new version that now retrieves patch from Linus' github account.
+  Hopefully, this is temporary.
+
+*git-sources-3.1_rc4-r2 (31 Aug 2011)
+
+  31 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc4-r2.ebuild:
+  Version bump
+
+*git-sources-3.1_rc4-r1 (30 Aug 2011)
+
+  30 Aug 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.1_rc4-r1.ebuild:
+  Version bump
+
+*git-sources-3.1_rc4 (29 Aug 2011)
+
+  29 Aug 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.1_rc4.ebuild:
+  Version bump
+
+  29 Aug 2011; Michael Pagano <mpagano@gentoo.org> -git-sources-3.1_rc2.ebuild,
+  -git-sources-3.1_rc2-r2.ebuild, -git-sources-3.1_rc2-r3.ebuild,
+  -git-sources-3.1_rc2-r4.ebuild, -git-sources-3.1_rc2-r5.ebuild,
+  -git-sources-3.1_rc2-r6.ebuild, -git-sources-3.1_rc2-r7.ebuild,
+  -git-sources-3.1_rc2-r8.ebuild, -git-sources-3.1_rc2-r9.ebuild:
+  Old version cleanup
+
+*git-sources-3.1_rc3-r7 (29 Aug 2011)
+
+  29 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc3-r7.ebuild:
+  Version bump
+
+*git-sources-3.1_rc3-r6 (28 Aug 2011)
+
+  28 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc3-r6.ebuild:
+  Version bump
+
+*git-sources-3.1_rc3-r5 (28 Aug 2011)
+
+  28 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc3-r5.ebuild:
+  Version bump
+
+*git-sources-3.1_rc3-r4 (28 Aug 2011)
+
+  28 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc3-r4.ebuild:
+  Version bump
+
+*git-sources-3.1_rc3-r3 (25 Aug 2011)
+
+  25 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc3-r3.ebuild:
+  Version bump
+
+*git-sources-3.1_rc3-r2 (25 Aug 2011)
+
+  25 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc3-r2.ebuild:
+  Version bump
+
+*git-sources-3.1_rc3-r1 (24 Aug 2011)
+
+  24 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc3-r1.ebuild:
+  Version bump
+
+  23 Aug 2011; Mike Pagano <mpagano@gentoo.org> -git-sources-3.1_rc1.ebuild:
+  Old version removal
+
+*git-sources-3.1_rc3 (23 Aug 2011)
+
+  23 Aug 2011; Robin H. Johnson <robbat2@gentoo.org>
+  +git-sources-3.1_rc3.ebuild:
+  Version bump.
+
+*git-sources-3.1_rc2-r9 (22 Aug 2011)
+
+  22 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc2-r9.ebuild:
+  Version bump
+
+*git-sources-3.1_rc2-r8 (20 Aug 2011)
+
+  20 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc2-r8.ebuild:
+  Version bump
+
+*git-sources-3.1_rc2-r7 (20 Aug 2011)
+
+  20 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc2-r7.ebuild:
+  Version bump
+
+*git-sources-3.1_rc2-r6 (19 Aug 2011)
+
+  19 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc2-r6.ebuild:
+  Version bump
+
+*git-sources-3.1_rc2-r5 (19 Aug 2011)
+
+  19 Aug 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.1_rc2-r5.ebuild:
+  Version bump
+
+*git-sources-3.1_rc2-r4 (18 Aug 2011)
+
+  18 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc2-r4.ebuild:
+  Version bump
+
+*git-sources-3.1_rc2-r3 (17 Aug 2011)
+
+  17 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc2-r3.ebuild:
+  Version bump
+
+*git-sources-3.1_rc2-r2 (17 Aug 2011)
+
+  17 Aug 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.1_rc2-r2.ebuild:
+  Version bump
+
+  15 Aug 2011; Michael Pagano <mpagano@gentoo.org> -git-sources-3.0-r15.ebuild,
+  -git-sources-3.0-r16.ebuild, -git-sources-3.0-r17.ebuild,
+  -git-sources-3.0-r18.ebuild, -git-sources-3.0-r19.ebuild,
+  -git-sources-3.0-r20.ebuild, -git-sources-3.0-r21.ebuild,
+  -git-sources-3.0-r22.ebuild, -git-sources-3.0-r23.ebuild,
+  -git-sources-3.0-r24.ebuild, -git-sources-3.0-r25.ebuild:
+  Old version cleanup
+
+*git-sources-3.1_rc2 (15 Aug 2011)
+
+  15 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.1_rc2.ebuild:
+  Version bump
+
+*git-sources-3.1_rc1 (15 Aug 2011)
+
+  15 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.1_rc1.ebuild:
+  Version bump
+
+*git-sources-3.0-r25 (08 Aug 2011)
+
+  08 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r25.ebuild:
+  Version bump
+
+*git-sources-3.0-r24 (07 Aug 2011)
+
+  07 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r24.ebuild:
+  Version bump
+
+*git-sources-3.0-r23 (07 Aug 2011)
+
+  07 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r23.ebuild:
+  Version bump
+
+  06 Aug 2011; Michael Pagano <mpagano@gentoo.org> -git-sources-3.0-r6.ebuild,
+  -git-sources-3.0-r7.ebuild, -git-sources-3.0-r8.ebuild,
+  -git-sources-3.0-r9.ebuild, -git-sources-3.0-r10.ebuild,
+  -git-sources-3.0-r11.ebuild, -git-sources-3.0-r12.ebuild,
+  -git-sources-3.0-r13.ebuild, -git-sources-3.0-r14.ebuild:
+  Old version cleanup
+
+*git-sources-3.0-r22 (06 Aug 2011)
+
+  06 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r22.ebuild:
+  Version bump
+
+*git-sources-3.0-r21 (05 Aug 2011)
+
+  05 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r21.ebuild:
+  Version bump
+
+*git-sources-3.0-r20 (05 Aug 2011)
+
+  05 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r20.ebuild:
+  Version bump
+
+*git-sources-3.0-r19 (04 Aug 2011)
+
+  04 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r19.ebuild:
+  Version bump
+
+*git-sources-3.0-r18 (03 Aug 2011)
+
+  03 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r18.ebuild:
+  Version bump
+
+*git-sources-3.0-r17 (02 Aug 2011)
+
+  02 Aug 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0-r17.ebuild:
+  Version bump
+
+*git-sources-3.0-r16 (02 Aug 2011)
+
+  02 Aug 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0-r16.ebuild:
+  Version bump
+
+  01 Aug 2011; Mike Pagano <mpagano@gentoo.org> -git-sources-3.0-r1.ebuild,
+  -git-sources-3.0-r2.ebuild, -git-sources-3.0-r3.ebuild,
+  -git-sources-3.0-r4.ebuild, -git-sources-3.0-r5.ebuild:
+  Old version cleanup
+
+*git-sources-3.0-r15 (01 Aug 2011)
+
+  01 Aug 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0-r15.ebuild:
+  Version bump
+
+*git-sources-3.0-r14 (01 Aug 2011)
+
+  01 Aug 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r14.ebuild:
+  Version bump
+
+*git-sources-3.0-r13 (31 Jul 2011)
+
+  31 Jul 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r13.ebuild:
+  Version bump
+
+*git-sources-3.0-r12 (30 Jul 2011)
+
+  30 Jul 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r12.ebuild:
+  Version bump
+
+*git-sources-3.0-r11 (29 Jul 2011)
+
+  29 Jul 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0-r11.ebuild:
+  Version bump
+
+*git-sources-3.0-r10 (28 Jul 2011)
+
+  28 Jul 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0-r10.ebuild:
+  Version bump
+
+*git-sources-3.0-r9 (28 Jul 2011)
+
+  28 Jul 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r9.ebuild:
+  Version bump
+
+*git-sources-3.0-r8 (27 Jul 2011)
+
+  27 Jul 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0-r8.ebuild:
+  Version bump
+
+*git-sources-3.0-r7 (27 Jul 2011)
+
+  27 Jul 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r7.ebuild:
+  Version bump
+
+*git-sources-3.0-r6 (26 Jul 2011)
+
+  26 Jul 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r6.ebuild:
+  Version bump
+
+*git-sources-3.0-r5 (26 Jul 2011)
+
+  26 Jul 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r5.ebuild:
+  Version bump
+
+*git-sources-3.0-r4 (25 Jul 2011)
+
+  25 Jul 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0-r4.ebuild:
+  Version bump
+
+*git-sources-3.0-r3 (24 Jul 2011)
+
+  24 Jul 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r3.ebuild:
+  Version bump
+
+*git-sources-3.0-r2 (23 Jul 2011)
+
+  23 Jul 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r2.ebuild:
+  Version bump
+
+  23 Jul 2011; Michael Pagano <mpagano@gentoo.org> -git-sources-3.0_rc6.ebuild,
+  -git-sources-3.0_rc6-r6.ebuild, -git-sources-3.0_rc6-r7.ebuild,
+  -git-sources-3.0_rc7.ebuild, -git-sources-3.0_rc7-r1.ebuild,
+  -git-sources-3.0_rc7-r2.ebuild, -git-sources-3.0_rc7-r3.ebuild,
+  -git-sources-3.0_rc7-r4.ebuild, -git-sources-3.0_rc7-r5.ebuild,
+  -git-sources-3.0_rc7-r6.ebuild, -git-sources-3.0_rc7-r7.ebuild,
+  -git-sources-3.0_rc7-r8.ebuild, -git-sources-3.0_rc7-r9.ebuild:
+  Old version cleanups
+
+*git-sources-3.0-r1 (23 Jul 2011)
+
+  23 Jul 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0-r1.ebuild:
+  Version bump
+
+*git-sources-3.0_rc7-r9 (21 Jul 2011)
+
+  21 Jul 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.0_rc7-r9.ebuild:
+  Version bump
+
+*git-sources-3.0_rc7-r8 (20 Jul 2011)
+
+  20 Jul 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.0_rc7-r8.ebuild:
+  Version bump
+
+*git-sources-3.0_rc7-r7 (19 Jul 2011)
+
+  19 Jul 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0_rc7-r7.ebuild:
+  Version bump
+
+*git-sources-3.0_rc7-r6 (18 Jul 2011)
+
+  18 Jul 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.0_rc7-r6.ebuild:
+  Version bump
+
+*git-sources-3.0_rc7-r5 (16 Jul 2011)
+
+  16 Jul 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.0_rc7-r5.ebuild:
+  Version bump
+
+*git-sources-3.0_rc7-r4 (16 Jul 2011)
+
+  16 Jul 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.0_rc7-r4.ebuild:
+  Version bump
+
+  15 Jul 2011; Michael Pagano <mpagano@gentoo.org> -git-sources-3.0_rc1.ebuild,
+  -git-sources-3.0_rc3.ebuild, -git-sources-3.0_rc4.ebuild,
+  -git-sources-3.0_rc5.ebuild:
+  Cleanup old versions
+
+*git-sources-3.0_rc7-r3 (15 Jul 2011)
+
+  15 Jul 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.0_rc7-r3.ebuild:
+  Version bump
+
+*git-sources-3.0_rc7-r2 (14 Jul 2011)
+
+  14 Jul 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.0_rc7-r2.ebuild:
+  Version bump
+
+*git-sources-3.0_rc7-r1 (13 Jul 2011)
+
+  13 Jul 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0_rc7-r1.ebuild:
+  Version bump
+
+*git-sources-3.0_rc7 (12 Jul 2011)
+
+  12 Jul 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0_rc7.ebuild:
+  Version bump
+
+*git-sources-3.0_rc6-r7 (11 Jul 2011)
+
+  11 Jul 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.0_rc6-r7.ebuild:
+  Version bump
+
+*git-sources-3.0_rc6-r6 (10 Jul 2011)
+
+  10 Jul 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-3.0_rc6-r6.ebuild:
+  Version bump
+
+*git-sources-3.0_rc6 (05 Jul 2011)
+
+  05 Jul 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0_rc6.ebuild:
+  Version bump
+
+*git-sources-3.0_rc5 (28 Jun 2011)
+
+  28 Jun 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0_rc5.ebuild:
+  Version bump
+
+*git-sources-3.0_rc4 (21 Jun 2011)
+
+  21 Jun 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0_rc4.ebuild:
+  Version bump
+
+  16 Jun 2011; Mike Pagano <mpagano@gentoo.org> -git-sources-2.6.39-r11.ebuild,
+  -git-sources-2.6.39-r12.ebuild, -git-sources-2.6.39-r13.ebuild,
+  -git-sources-2.6.39-r14.ebuild, -git-sources-2.6.39-r15.ebuild,
+  -git-sources-2.6.39-r16.ebuild, -git-sources-2.6.39-r17.ebuild,
+  -git-sources-2.6.39-r18.ebuild, -git-sources-2.6.39-r19.ebuild:
+  Remove old versions.
+
+*git-sources-3.0_rc3 (13 Jun 2011)
+
+  13 Jun 2011; Michael Pagano <mpagano@gentoo.org> +git-sources-3.0_rc3.ebuild:
+  Version bump
+
+*git-sources-3.0_rc1 (03 Jun 2011)
+
+  03 Jun 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-3.0_rc1.ebuild:
+  Version bump
+
+  31 May 2011; Mike Pagano <mpagano@gentoo.org> -git-sources-2.6.39-r1.ebuild,
+  -git-sources-2.6.39-r2.ebuild, -git-sources-2.6.39-r3.ebuild,
+  -git-sources-2.6.39-r4.ebuild, -git-sources-2.6.39-r5.ebuild,
+  -git-sources-2.6.39-r6.ebuild, -git-sources-2.6.39-r7.ebuild,
+  -git-sources-2.6.39-r8.ebuild, -git-sources-2.6.39-r9.ebuild,
+  -git-sources-2.6.39-r10.ebuild:
+  Old version cleanup
+
+*git-sources-2.6.39-r19 (30 May 2011)
+
+  30 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39-r19.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r18 (29 May 2011)
+
+  29 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r18.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r17 (29 May 2011)
+
+  29 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r17.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r16 (29 May 2011)
+
+  29 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39-r16.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r15 (28 May 2011)
+
+  28 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r15.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r14 (27 May 2011)
+
+  27 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39-r14.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r13 (27 May 2011)
+
+  27 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39-r13.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r12 (27 May 2011)
+
+  27 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39-r12.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r11 (26 May 2011)
+
+  26 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r11.ebuild:
+  Version bump
+
+  26 May 2011; Mike Pagano <mpagano@gentoo.org> git-sources-2.6.39-r10.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r10 (25 May 2011)
+
+  25 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r10.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r9 (24 May 2011)
+
+  24 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r9.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r8 (24 May 2011)
+
+  24 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r8.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r7 (23 May 2011)
+
+  23 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r7.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r6 (23 May 2011)
+
+  23 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r6.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r5 (22 May 2011)
+
+  22 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39-r5.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r4 (21 May 2011)
+
+  21 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r4.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r3 (21 May 2011)
+
+  21 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39-r3.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r2 (20 May 2011)
+
+  20 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39-r2.ebuild:
+  Version bump
+
+*git-sources-2.6.39-r1 (20 May 2011)
+
+  20 May 2011; Michael Pagano <mpagano@gentoo.org>
+  -git-sources-2.6.39_rc6.ebuild, -git-sources-2.6.39_rc6-r1.ebuild,
+  -git-sources-2.6.39_rc6-r2.ebuild, -git-sources-2.6.39_rc6-r3.ebuild,
+  -git-sources-2.6.39_rc6-r4.ebuild, -git-sources-2.6.39_rc6-r5.ebuild,
+  -git-sources-2.6.39_rc6-r6.ebuild, -git-sources-2.6.39_rc7.ebuild,
+  -git-sources-2.6.39_rc7-r1.ebuild, -git-sources-2.6.39_rc7-r2.ebuild,
+  -git-sources-2.6.39_rc7-r3.ebuild, -git-sources-2.6.39_rc7-r4.ebuild,
+  -git-sources-2.6.39_rc7-r5.ebuild, -git-sources-2.6.39_rc7-r6.ebuild,
+  -git-sources-2.6.39_rc7-r7.ebuild, -git-sources-2.6.39_rc7-r8.ebuild,
+  -git-sources-2.6.39_rc7-r9.ebuild, -git-sources-2.6.39_rc7-r10.ebuild,
+  -git-sources-2.6.39_rc7-r11.ebuild, -git-sources-2.6.39_rc7-r12.ebuild,
+  -git-sources-2.6.39_rc7-r13.ebuild, -git-sources-2.6.39_rc7-r14.ebuild,
+  +git-sources-2.6.39-r1.ebuild:
+  Version bump and old version cleanup
+
+*git-sources-2.6.39_rc7-r14 (19 May 2011)
+
+  19 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r14.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r13 (19 May 2011)
+
+  19 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r13.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r12 (17 May 2011)
+
+  17 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r12.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r11 (17 May 2011)
+
+  17 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r11.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r10 (16 May 2011)
+
+  16 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r10.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r9 (15 May 2011)
+
+  15 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r9.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r8 (15 May 2011)
+
+  15 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r8.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r7 (14 May 2011)
+
+  14 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r7.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r6 (14 May 2011)
+
+  14 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r6.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r5 (13 May 2011)
+
+  13 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r5.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r4 (13 May 2011)
+
+  13 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r4.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r3 (12 May 2011)
+
+  12 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r3.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r2 (12 May 2011)
+
+  12 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r2.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7-r1 (11 May 2011)
+
+  11 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc7-r1.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc7 (10 May 2011)
+
+  10 May 2011; Mike Pagano <mpagano@gentoo.org> +git-sources-2.6.39_rc7.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc6-r6 (10 May 2011)
+
+  10 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc6-r6.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc6-r5 (07 May 2011)
+
+  07 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc6-r5.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc6-r4 (07 May 2011)
+
+  07 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc6-r4.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc6-r3 (07 May 2011)
+
+  07 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc6-r3.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc6-r2 (05 May 2011)
+
+  05 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc6-r2.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc6-r1 (04 May 2011)
+
+  04 May 2011; Michael Pagano <mpagano@gentoo.org>
+  -git-sources-2.6.39_rc5.ebuild, -git-sources-2.6.39_rc5-r1.ebuild,
+  -git-sources-2.6.39_rc5-r2.ebuild, -git-sources-2.6.39_rc5-r3.ebuild,
+  -git-sources-2.6.39_rc5-r4.ebuild, -git-sources-2.6.39_rc5-r5.ebuild,
+  -git-sources-2.6.39_rc5-r6.ebuild, -git-sources-2.6.39_rc5-r7.ebuild,
+  -git-sources-2.6.39_rc5-r8.ebuild, git-sources-2.6.39_rc6.ebuild,
+  +git-sources-2.6.39_rc6-r1.ebuild:
+  Version bump. Old version cleanup
+
+*git-sources-2.6.39_rc6 (04 May 2011)
+
+  04 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc6.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc5-r8 (04 May 2011)
+
+  04 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc5-r8.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc5-r7 (03 May 2011)
+
+  03 May 2011; Mike Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc5-r7.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc5-r6 (03 May 2011)
+
+  03 May 2011; Michael Pagano <mpagano@gentoo.org>
+  -git-sources-2.6.39_rc4.ebuild, -git-sources-2.6.39_rc4-r1.ebuild,
+  -git-sources-2.6.39_rc4-r2.ebuild, -git-sources-2.6.39_rc4-r3.ebuild,
+  -git-sources-2.6.39_rc4-r4.ebuild, -git-sources-2.6.39_rc4-r5.ebuild,
+  -git-sources-2.6.39_rc4-r6.ebuild, -git-sources-2.6.39_rc4-r7.ebuild,
+  -git-sources-2.6.39_rc4-r8.ebuild, -git-sources-2.6.39_rc4-r9.ebuild,
+  +git-sources-2.6.39_rc5-r6.ebuild:
+  Version bump, old version cleanup and ChangeLog prune
+
+*git-sources-2.6.39_rc5-r5 (03 May 2011)
+
+  03 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc5-r5.ebuild:
+  Version bump
+
+*git-sources-2.6.39_rc5-r4 (01 May 2011)
+
+  01 May 2011; Michael Pagano <mpagano@gentoo.org>
+  +git-sources-2.6.39_rc5-r4.ebuild:
+  Version bump
+
