@@ -2,12 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit subversion eutils
+inherit git-2 eutils
 
 DESCRIPTION="Reference compiler for the D programming language"
 
 HOMEPAGE="http://www.digitalmars.com/d/"
-ESVN_REPO_URI="http://svn.dsource.org/projects/dmd/trunk"
+EGIT_REPO_URI="git://github.com/D-Programming-Language/dmd.git"
 
 LICENSE="DMD"
 SLOT="2"
@@ -30,10 +30,10 @@ S="${WORKDIR}/${PN}2"
 src_compile() {
 # DMD
 	cd "${S}/src"
-	ln -s . mars
-	make -j4 -f linux.mak || die "make failed"
+#	ln -s . mars
+	make -j4 -f posix.mak || die "make failed"
 # druntime
-	svn co http://svn.dsource.org/projects/druntime/trunk druntime
+	git clone git://github.com/D-Programming-Language/druntime.git
 	cd "druntime/"
 	(
 		export PATH="${S}/src:${PATH}"
