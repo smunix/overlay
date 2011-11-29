@@ -1,0 +1,13 @@
+diff --git a/posix.mak b/posix.mak
+index 6280140..6fd2cd1 100644
+--- a/posix.mak
++++ b/posix.mak
+@@ -45,7 +45,7 @@ ifeq (,$(MODEL))
+ endif
+ 
+ # Configurable stuff that's rarely edited
+-DRUNTIME_PATH = ../druntime
++DRUNTIME_PATH = ./druntime
+ ZIPFILE = phobos.zip
+ ROOT_OF_THEM_ALL = generated
+ ROOT = $(ROOT_OF_THEM_ALL)/$(OS)/$(BUILD)/$(MODEL)
