@@ -23,7 +23,7 @@ DEPEND="sys-apps/findutils
 RDEPEND="dev-util/dmd-common
 	amd64? ( app-emulation/emul-linux-x86-compat )"
 PDEPEND="app-admin/eselect-dmd
-	=dev-libs/phobos-${PV}"
+	=dev-libs/phobos-${PVR}"
 
 S="${WORKDIR}/${PN}2"
 
