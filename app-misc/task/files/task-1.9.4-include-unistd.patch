@@ -1,0 +1,12 @@
+diff --git a/task-1.9.4/src/Transport.cpp b/task-1.9.4/src/Transport.cpp
+index eda61d2..e10d2ca 100644
+--- a/task-1.9.4/src/Transport.cpp
++++ b/task-1.9.4/src/Transport.cpp
+@@ -27,6 +27,7 @@
+ 
+ #include <iostream>
+ #include <stdlib.h>
++#include <unistd.h>
+ #include <sys/types.h>
+ #include <sys/wait.h>
+ #include "Transport.h"

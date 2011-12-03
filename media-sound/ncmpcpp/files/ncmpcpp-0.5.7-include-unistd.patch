@@ -1,0 +1,12 @@
+diff --git a/ncmpcpp-0.5.7/src/window.cpp b/ncmpcpp-0.5.7/src/window.cpp
+index f6e3c5c..e980d12 100644
+--- a/ncmpcpp-0.5.7/src/window.cpp
++++ b/ncmpcpp-0.5.7/src/window.cpp
+@@ -25,6 +25,7 @@
+ # include <winsock.h>
+ #else
+ # include <sys/select.h>
++# include <unistd.h>
+ #endif
+ 
+ #include "error.h"
