@@ -1,0 +1,13 @@
+diff --git a/strigi-0.7.7/strigidaemon/bin/daemon/eventlistener/eventlistenerqueue.cpp b/strigi-0.7.7/strigidaemon/bin/daemon/eventlistener/eventlistenerqueue.cpp
+index 9fcdcb1..ac13680 100644
+--- a/strigi-0.7.7/strigidaemon/bin/daemon/eventlistener/eventlistenerqueue.cpp
++++ b/strigi-0.7.7/strigidaemon/bin/daemon/eventlistener/eventlistenerqueue.cpp
+@@ -27,7 +27,7 @@
+ #include <iostream>
+ #include <stdio.h>
+ 
+-#if defined(__SUNPRO_CC)
++#if defined(__SUNPRO_CC) || 1
+ #include <unistd.h>
+ #endif
+ 

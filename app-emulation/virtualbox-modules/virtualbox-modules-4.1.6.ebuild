@@ -25,7 +25,8 @@ S=${WORKDIR}
 
 BUILD_TARGETS="all"
 BUILD_TARGET_ARCH="${ARCH}"
-MODULE_NAMES="vboxdrv(misc:${S}) vboxnetflt(misc:${S}) vboxnetadp(misc:${S}) vboxpci(misc:${S})"
+MODULE_NAMES="vboxdrv(misc:${S}/vboxdrv) vboxnetflt(misc:${S}/vboxnetflt)
+vboxnetadp(misc:${S}/vboxnetadp) vboxpci(misc:${S}/vboxpci)"
 
 pkg_setup() {
 	linux-mod_pkg_setup

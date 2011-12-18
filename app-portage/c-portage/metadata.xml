@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>brian.dolbec@gmail.com</email>
+		<name>Brian Dolbec</name>
+	</maintainer>
+	<maintainer>
+		<email>skiarxon@gmail.com</email>
+		<name>Dimitris Papapoulios</name>
+	</maintainer>
+	<use>
+		<flag name="qt4"> Enables Qt4 wrapper for c-portage"</flag>
+	</use>
+</pkgmetadata>
+

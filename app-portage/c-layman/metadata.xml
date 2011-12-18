@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>tools-portage</herd>
+	<longdescription lang="en">A C version of the Gentoo Layman API</longdescription>
+	<maintainer>
+		<email>detlev.casanova@gmail.com</email>
+		<name>Detlev Casanova</name>
+		<description>Upstream Maintainer (please CC on bugs)</description>
+	</maintainer>
+</pkgmetadata>
