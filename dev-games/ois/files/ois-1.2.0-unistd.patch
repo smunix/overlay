@@ -1,0 +1,37 @@
+diff --git a/ois/demos/FFConsoleDemo.cpp b/ois/demos/FFConsoleDemo.cpp
+index c573754..f32f894 100644
+--- a/ois/demos/FFConsoleDemo.cpp
++++ b/ois/demos/FFConsoleDemo.cpp
+@@ -7,6 +7,7 @@
+ #include <iostream>
+ #include <vector>
+ #include <sstream>
++#include <unistd.h>
+ 
+ ////////////////////////////////////Needed Windows Headers////////////
+ #if defined OIS_WIN32_PLATFORM
+diff --git a/ois/demos/OISConsole.cpp b/ois/demos/OISConsole.cpp
+index b736e0f..a1ab746 100755
+--- a/ois/demos/OISConsole.cpp
++++ b/ois/demos/OISConsole.cpp
+@@ -12,6 +12,7 @@
+ #include <iostream>
+ #include <vector>
+ #include <sstream>
++#include <unistd.h>
+ 
+ ////////////////////////////////////Needed Windows Headers////////////
+ #if defined OIS_WIN32_PLATFORM
+diff --git a/ois/src/linux/LinuxJoyStickEvents.cpp b/ois/src/linux/LinuxJoyStickEvents.cpp
+index 0dc4bc2..edfaf3d 100755
+--- a/ois/src/linux/LinuxJoyStickEvents.cpp
++++ b/ois/src/linux/LinuxJoyStickEvents.cpp
+@@ -34,7 +34,7 @@ restrictions:
+ #include <cassert>	
+ #include <linux/input.h>
+ 
+-
++#include <unistd.h>
+ #include <sstream>
+ 
+ using namespace OIS;
